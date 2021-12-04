@@ -13,7 +13,7 @@ console.log(
     typeof(variavelSemInicalizacao)
 )
 
-//Variavel recebdno um valor null ela está vazia, porém com o tipo object
+//Variavel recebendo um valor null ela está vazia, porém com o tipo object
 variavelSemInicalizacao = null
 console.log(
     variavelSemInicalizacao,
