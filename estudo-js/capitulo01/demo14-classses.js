@@ -32,3 +32,12 @@ class Heroi3 {
 
 const anoNascimento = Heroi3.obterAnoNascimento(19)
 console.log(anoNascimento)
+
+
+
+class Test { 
+    constructor(nome) { 
+        this.nome = nome, this.idade = 18 
+    }
+}
+console.log(`${this.nome}`)
