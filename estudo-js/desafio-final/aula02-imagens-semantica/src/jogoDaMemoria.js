@@ -15,6 +15,12 @@ class JogoDaMemoria {
         // vai pegar toas as funcores da classe tela!
         // coloca todos os herois na tela
         this.tela.atualizarImagens(this.heroisIniciais)
+        // forçar a tela a usar o THIS de Jogo da memoria
+        this.tela.configurarBotaoJogar(this.jogar.bind(this))
+    }
+    
+    jogar() {
+        console.log('uau')
     }
 }
 

@@ -1,4 +1,5 @@
 const ID_CONTEUDO = "conteudo"
+const ID_BTN_JOGAR = "jogar"
 class Tela {
     static obterCodigoHtml(item){
         return `
@@ -26,6 +27,11 @@ class Tela {
     static atualizarImagens(itens) {
         const codigoHtml = Tela.gerarStringHTMLPelaImagem(itens)
         Tela.alterarConteudoHtml(codigoHtml)
+    }
+
+    static configurarBotaoJOgar(funcaoOnClick){
+        const btnJogar = document.getElementById(ID_BTN_JOGAR)
+        btnJogar.onclick = funcaoOnClick
     }
 
 }
